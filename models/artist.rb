@@ -31,7 +31,7 @@ class Artist
 
   end
 
-  def albums()
+  def albums() #selects all albums by a specific artist
     sql = "SELECT * FROM albums WHERE artist_id = $1;"
 
     values = [@id]
@@ -63,7 +63,12 @@ class Artist
     values = [@id]
     SqlRunner.run(sql, values) if albums() == nil
 
-  end #you would need to make sure there are no albums before you delete the artist
+  end #you would need to make sure there are no albums before you delete the artist- because an album has a foreign key in it linking to artist. Possibly using something like a LEFT JOIN/INNER JOIN
+
+# DELETE T1, T2
+# FROM T1
+# INNER JOIN T2 ON T1.key = T2.key
+# WHERE condition;
 
   def self.find_by_id(id)
     sql = "SELECT * FROM artists WHERE id = $1;"

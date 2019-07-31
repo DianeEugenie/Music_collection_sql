@@ -37,7 +37,7 @@ class Album
 
   end
 
-  def artist()
+  def artist() #create a function to find the artist of a specific album
     sql = "SELECT * FROM artists WHERE id = $1;"
 
     values = [@artist_id]
