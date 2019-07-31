@@ -99,7 +99,7 @@ album3.genre = 'Metal'
 album3.update()
 
 album5.delete()
-album6.delete()
+# album6.delete()
 artist3.delete()
 
 
