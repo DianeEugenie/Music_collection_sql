@@ -1,7 +1,7 @@
 require_relative("./artist.rb")
 
 class Album
-  
+
   attr_reader :id, :name, :genre, :artist_id
 
   def initialize(album)
@@ -11,5 +11,5 @@ class Album
     @artist_id = album['artist_id'].to_i()
   end
 
-
+#11
 end
