@@ -98,8 +98,9 @@ artist1.update()
 album3.genre = 'Metal'
 album3.update()
 
-album4.delete()
-
+album5.delete()
+album6.delete()
+artist3.delete()
 
 
 
