@@ -8,8 +8,8 @@ class Album
 
   def initialize(album)
     @id = album['id'].to_i() if album['id']
-    @name = album
-    @genre = genre
+    @name = album['name']
+    @genre = album['genre']
     @artist_id = album['artist_id'].to_i()
   end
 
