@@ -38,7 +38,7 @@ class Album
   end
 
   def artist()
-    sql = "SELECT * FROM artists WHERE id = $1"
+    sql = "SELECT * FROM artists WHERE id = $1;"
 
     values = [@artist_id]
 

@@ -67,6 +67,31 @@ album4 = Album.new(
   }
 )
 
+album4.save()
+
+album5 = Album.new(
+  {
+    'name' => 'Funhouse',
+    'genre' => 'Pop',
+    'artist_id' => artist3.id
+  }
+)
+
+album5.save()
+
+album6 = Album.new(
+  {
+    'name' => 'Hurts 2B Human',
+    'genre' => 'Pop',
+    'artist_id' => artist3.id
+  }
+)
+
+album6.save()
+
+artist1.name = 'Tina the Awesome'
+artist1.update()
+
 
 
 
