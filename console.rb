@@ -92,6 +92,9 @@ album6.save()
 artist1.name = 'Tina the Awesome'
 artist1.update()
 
+album3.genre = 'Metal'
+album3.update()
+
 
 
 
