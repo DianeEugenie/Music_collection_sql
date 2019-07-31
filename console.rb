@@ -49,6 +49,24 @@ album2 = Album.new(
 
 album2.save()
 
+album3 = Album.new(
+  {
+    'name' => 'Minutes to Midnight',
+    'genre' => 'Rock',
+    'artist_id' => artist2.id
+  }
+)
+
+album3.save()
+
+album4 = Album.new(
+  {
+    'name' => 'One More Light',
+    'genre' => 'Rock',
+    'artist_id' => artist2.id
+  }
+)
+
 
 
 
